@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/libusb-package-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/libusb-package-{{ version }}.tar.gz
   sha256: c1c811b65301a154c8bb43a3ad66ee4a1daaff513d83eb75dfaee1f0e0998548
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 5
+  number: 6
 
 requirements:
   build:
